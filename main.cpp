@@ -45,11 +45,12 @@ wxIMPLEMENT_APP(AsciiConverterApp);
  
 bool AsciiConverterApp::OnInit()
 {
+    FreeConsole();
     MyFrame *frame = new MyFrame();
     frame->Show(true);
     return true;
 }
- 
+
 MyFrame::MyFrame()
     : wxFrame(nullptr, wxID_ANY, "Converter")
 {
